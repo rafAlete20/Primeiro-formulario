@@ -1,0 +1,81 @@
+/*O * é um seletor global do css*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    background: #121212;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*O container é o que vai estilizar toda a aplicação, todo o body*/
+.container{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    /*A width tem no máximo 600px, e se possivel ela
+    vai usar 100% delesmas se ela for menor vai usar a porcentagem*/
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.5);
+    /*Tudo o que estiver fora do container esse comando esconde*/
+    overflow: hidden;
+}
+.header{
+    /*Esse comando faz um gradiente, esse 'dag' é a rotação do gradiente*/
+    background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+    padding: 24px;
+    text-align: center;
+    color: white;
+}
+/*Todos esses comandos são apenas para o campo do formulário
+e para cada conteudo nas tags dentro dele*/
+.form{
+    padding: 18px;
+}
+.form_content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+.form_content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.form_content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.form_content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+.form button{
+    background-color: #00c3ff;
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+/*Essas duas classes foram criadas e serão ativadas apenas quando o usuário clicar e der erro*/
+.form_content.error input{
+    border-color: #ff3b25;
+}
+.form_content.error a{
+    color: #ff3b25;
+    visibility: visible;
+}

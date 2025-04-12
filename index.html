@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esses links são da Fonte que peguei no Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!--Esse <link> conecta o arquivo do css com o arquivo html-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Novo Usuário</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sections são putro tipo de separação, elas podem ser lidas por pessoas com deficiència visual -->
+        <section class="header">
+            <h2>Nova conta</h2>
+        </section>
+        <!-- Essa tag form cira campos de imput, básicamente um esaço para se preencher -->
+        <form id="form" class="form">
+            <div class="form_content">
+                <label for="username">Nome do Usuário</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Digite o nome do usuário"
+                />
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form_content">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite o seu email"
+                />
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form_content">
+                <label for="password">Senha</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite a sua senha"
+                />
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form_content">
+                <label for="password_confirmation">Confirmar senha</label>
+                <input
+                    type="password"
+                    id="password_confirmation"
+                    placeholder="Digite sua senha novamente"
+                />
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <!-- Esse type="submit" está submisso ao formulário em que está inserido -->
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <!-- Une o arquivo do JS com o HTML -->
+    <script src="./script.js"></script>
+</body>
+</html>
